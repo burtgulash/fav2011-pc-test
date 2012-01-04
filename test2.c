@@ -1,12 +1,16 @@
-/* Máte IEEEEEEEE floating point číslo (typu float) 0xC1D90000, 
-   jak vypadá v desítkový soustavě? */
+/**
+ * Máte IEEEEEEEE floating point číslo (typu float) 0xC1D90000, 
+ * jak vypadá v desítkový soustavě? 
+ * 3 body.
+ **/
 
 #include <stdio.h>
 
-void main() {
-	int x = 0xC1D90000;
-	float f = *((float*) &x);
-	printf("%f\n", f);
+void main()
+{
+    int x = 0xC1D90000;
+    float f = *((float *) &x);
+    printf("%f\n", f);
 }
 
 /* moje odpověď: něco zápornýho */
