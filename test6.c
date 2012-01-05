@@ -4,7 +4,6 @@
  * 
  **/
 
-/* pozn. Doslova už si to nepamatuju, vypíše to počet mezer ve stringu */
 #include <stdio.h>
 int foo(char *str)
 {
@@ -19,3 +18,5 @@ void main()
     char s[] = "Toto je velmi zábavný text";
     printf("%d\n", foo(s));
 }
+
+/* pozn. Doslova už si to nepamatuju, vypíše to počet mezer ve stringu */
