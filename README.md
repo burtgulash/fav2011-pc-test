@@ -3,11 +3,11 @@
 
 * Zkoušející/vyučující [Ing. Kamil  EKŠTEIN, Ph.D.](https://www.zcu.cz/about/people/?osoba=18388)
 
+
 ## 1. příklad - 6 bodů
 Doplňte makra preprocesoru tak, aby kód fungoval. 
 
 ```c
-
 #include <stdio.h>
 
 void main(int argc, char **argv)
@@ -20,28 +20,23 @@ void main(int argc, char **argv)
 }
 ```
 
-* Moje odpověď
-```c
-#define IS(a,b) case a: b; break
-#define IF(x) switch(x) {
-#define ENDIF }
-```
+[test1.c](test1.c)
 
 
-## 2. příklad - 3 boby
+## 2. příklad - 3 body
 Máte IEEEEEEEE floating point číslo (typu float) 0xC1D90000, jak vypadá v desítkový soustavě? 
 
-### Odpověď
-* moje odpověď: něco zápornýho
-* správná odpověď: -27.125
+[test2.c](test2.c)
 
-```c
-#include <stdio.h>
+## 3. otázka - 2 body
+Jsou následující konstanty správně? Jestli ano, jakého jsou typu?
+ * 0xA
+ * .1E0
 
-void main()
-{
-    int x = 0xC1D90000;
-    float f = *((float *) &x);
-    printf("%f\n", f);
-}
-```
+[test3.c](test3.c)
+
+## 4. otázka - 6 bodů
+Napište funkci typu "float eps (float x)", která pro dané číslo zjistí
+strojovou přesnost.
+
+[test4.c](test4.c)
